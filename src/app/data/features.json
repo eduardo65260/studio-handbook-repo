@@ -9,7 +9,7 @@
     "id": "json-loading",
     "title": "JSON Data Loading",
     "icon": "Database",
-    "content": "All feature details, including titles, icons, descriptive text, and image paths, are loaded from this central `features.json` file. This approach decouples the content from the application logic, making it easy to update or add new features without changing the code.\n\nThis makes the app highly maintainable and scalable. Below is an example of a dynamic image loaded from the content string.\n\n[img:json-structure]"
+    "content": "All (small change) feature details, including titles, icons, descriptive text, and image paths, are loaded from this central `features.json` file. This approach decouples the content from the application logic, making it easy to update or add new features without changing the code.\n\nThis makes the app highly maintainable and scalable. Below is an example of a dynamic image loaded from the content string.\n\n[img:json-structure]"
   },
   {
     "id": "image-replacement",
