@@ -7,6 +7,7 @@ import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import type { Feature } from './feature-sidebar';
 import { SidebarTrigger } from '@/components/ui/sidebar';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { ThemeToggle } from './theme-toggle';
 
 type FeatureDisplayProps = {
   feature: Feature | null;
@@ -63,10 +64,13 @@ export function FeatureDisplay({ feature, images }: FeatureDisplayProps) {
       <div className="p-4 sm:p-6 md:p-8">
         <Card className="shadow-lg">
           <CardHeader>
-            <CardTitle className="flex items-center gap-3 font-headline text-2xl md:text-3xl">
-              <SidebarTrigger className="md:hidden" />
-              {feature.title}
-            </CardTitle>
+            <div className="flex items-center justify-between">
+              <CardTitle className="flex items-center gap-3 font-headline text-2xl md:text-3xl">
+                <SidebarTrigger className="md:hidden" />
+                {feature.title}
+              </CardTitle>
+              <ThemeToggle />
+            </div>
           </CardHeader>
           <CardContent className="text-base">
             {renderContent()}
