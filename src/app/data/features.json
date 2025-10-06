@@ -1,0 +1,26 @@
+[
+  {
+    "id": "feature-list",
+    "title": "Feature List Display",
+    "icon": "ListChecks",
+    "content": "The application displays a comprehensive checklist of Firebase Studio features in a left-side panel. This is achieved using a custom `FeatureSidebar` component that reads feature data from this JSON file.\n\nEach item in the list is a clickable button that updates the application's state to display the relevant feature information. The sidebar itself is built using ShadCN's `Sidebar` components, ensuring it is responsive and accessible across all devices."
+  },
+  {
+    "id": "json-loading",
+    "title": "JSON Data Loading",
+    "icon": "Database",
+    "content": "All feature details, including titles, icons, descriptive text, and image paths, are loaded from this central `features.json` file. This approach decouples the content from the application logic, making it easy to update or add new features without changing the code.\n\nThis makes the app highly maintainable and scalable. Below is an example of a dynamic image loaded from the content string.\n\n[img:json-structure]"
+  },
+  {
+    "id": "image-replacement",
+    "title": "Dynamic Image Replacement",
+    "icon": "Image",
+    "content": "The application dynamically parses the content string for each feature and replaces image placeholders like `[img:imageId]` with actual image components. A custom parser function splits the content into text and image segments, then renders them accordingly.\n\nThis allows for rich, dynamic content managed entirely from the JSON file. Images are optimized using Next.js's `Image` component for better performance.\n\n[img:code-editor]"
+  },
+  {
+    "id": "info-display",
+    "title": "Feature Information Display",
+    "icon": "LayoutTemplate",
+    "content": "When a user clicks on a feature in the checklist, the main content area updates to show detailed information about its implementation. This is managed using React's state.\n\nThe `FeatureDisplay` component receives the currently selected feature as a prop and renders its title and content. The layout uses a split-screen approach, which is common for documentation and handbook-style applications, providing a clear and intuitive user experience.\n\n[img:ui-flow]"
+  }
+]
