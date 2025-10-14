@@ -27,6 +27,18 @@
     "id": "Errors, errors everywhere!",
     "title": "You'll never be safe from annoying bugs",
     "icon": "LayoutTemplate",
-    "content": "When a user clicks on a feature in the checklist, the main content area updates to show detailed information about its implementation. This is managed using React's state.\n\nThe `FeatureDisplay` component receives the currently selected feature as a prop and renders its title and content. The layout uses a split-screen approach, which is common for documentation and handbook-style applications, providing a clear and intuitive user experience.\n\n[img:ui-flow]"
+    "content": "The first problem I encountered was with the github repo, although it was all set from my previous deployment (which didin't had any issues), I tried performing this same task from a new duplicated workspace, and all I had to do to set it up was to run the command 'git remote add origin https://github.com/github-name/github-repo' to link the new workspace with my old repository, and although it is not optimal, I did had to use the '-f' flag with the git push command to force the commit to happen"
+  },
+  {
+    "id": "Errors, errors everywhere! the mithycal 404",
+    "title": "Where did my page went?",
+    "icon": "LayoutTemplate",
+    "content": "Here we are going to tackle the easiest 404 error that you may find, and how to spot it, nextJS uses folders, and page.tsx files to create the routes that the application will use, the 'home' page would be under src > app > page.tsx which is reacheable by just accessing the '/' route in your browser, now if you try to go to /login in this page you'll get a 404 cause I don't have it defined BUT if you go to /newPage you'll be able to see it since I have declared it under  "
+  },
+  {
+    "id": "Errors, errors everywhere! The mighty 'Publish' button",
+    "title": "I don't want to deploy to a new project, please help!",
+    "icon": "LayoutTemplate",
+    "content": "Yes! you can change which project will the publish button will deploy to, you just have to follow https://firebase.google.com/docs/studio/firebase-projects?hl=en&authuser=0#connect-manual and reload the workspace, it should update itself!"
   }
 ]
