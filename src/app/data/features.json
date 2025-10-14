@@ -3,23 +3,29 @@
     "id": "feature-list",
     "title": "Feature List Display",
     "icon": "ListChecks",
-    "content": "The application displays a comprehensive checklist of Firebase Studio features in a left-side panel. This is achieved using a custom `FeatureSidebar` component that reads feature data from this JSON file.\n\nEach item in the list is a clickable button that updates the application's state to display the relevant feature information. The sidebar itself is built using ShadCN's `Sidebar` components, ensuring it is responsive and accessible across all devices."
+    "content": "The application displays a comprehensive checklist of Firebase Studio features that were used to develop this page, yes, it might sound weird but I wanted to try the features that firebase studio has to offer without itroducing a lot of complexity from other products\n\nIn the left panel you'll find a list of these feature and how they were implemented in this webpage."
   },
   {
-    "id": "json-loading",
-    "title": "JSON Data Loading",
-    "icon": "Database",
-    "content": "All feature details, including titles, icons, descriptive text, and image paths, are loaded from this central `features.json` file. This approach decouples the content from the application logic, making it easy to update or add new features without changing the code.\n\nThis makes the app highly maintainable and scalable. Below is an example of a dynamic image loaded from the content string.\n\n[img:json-structure]"
+    "id": "step 1: Prototyper",
+    "title": "Prototype the prototype using the prototyper",
+    "icon": "Bot",
+    "content": "To deploy the front end of this app I took advantage of the prototyper provided by firebase studio which can create almost the entire application for you! just have to be very specific about the features that you want implemented in it\n\nIn this case the main prompt that I used was:\n\n 'I want to create an app that features a list of all the features of firebase studio that can be used/implemented; it will be side-left panel that contains a checklist of said features, when you click on each one of these you will show information on how these features were implemented in the development of said app on an easy way.\n\nI want all of this be taken from a json file that allows me to add information that will be loaded into the page, I want to be able to add images in the format of [img/path.jpg] inside of the json, then when the information is loaded into the page it will replace the [img/path.jpg] with the actual image'\n\n And as you can see taht's exactly what I got with the exception of another prompt that I used to add the dark mode and the left panel wasn't showing up correctly on a mobile device width and it is the following: \n\n'can you add a dark mode, and an option to display the left panel menu when the width of the screen is smaller?'\n\n which if I'm being honest, I could've placed everything in the first prompt, but I think it is good to check the results that you get from the prompt and work from there cause most likely it wont be perfect the first time."
   },
   {
-    "id": "image-replacement",
-    "title": "Dynamic Image Replacement",
+    "id": "MCP server!",
+    "title": "Google Translate between you and the APIs",
     "icon": "Image",
-    "content": "The application dynamically parses the content string for each feature and replaces image placeholders like `[img:imageId]` with actual image components. A custom parser function splits the content into text and image segments, then renders them accordingly.\n\nThis allows for rich, dynamic content managed entirely from the JSON file. Images are optimized using Next.js's `Image` component for better performance.\n\n[img:code-editor]"
+    "content": "The MCP server will interpret the actions you want to perform while talking to gemini and will make calls to the correspondant API if the action falls under certain parameters, \n\n I just used the documentation https://firebase.google.com/docs/studio/mcp-servers#config-cli and it's pretty much plug and play, you even get the option for adding the firebase mcp server from a button once you create the mcp.json file in the .idx folder it looks something like this \n\n[adding the mcp server to firebase]\n\n and it add the json info required automatically\n\n After that's done you can reload everything and even tho it takes a little bit to start you'll see a tool icon on the gemini and if you click it it will display all the 'tools' that the mcp has access to\n\n[mcp server tools]\n\ni.e. if you tell gemini that you want to log in in firebase, it will make the API call that let's you log in in firebase and will ask you if you want to use the tool or not\n\n[tool being executed]\n\n the tools provided by this kind of mcp server can be found https://firebase.google.com/docs/ai-assistance/mcp-server#tools"
   },
   {
-    "id": "info-display",
-    "title": "Feature Information Display",
+    "id": "App Hosting",
+    "title": "App Hosting (not Hosting)",
+    "icon": "LayoutTemplate",
+    "content": "To deploy this app and to make it possible to reach you I used the documentation https://firebase.google.com/docs/app-hosting/get-started#create-app-hosting-backend It made it super easy to create a backend on which I was able to host this application \n\n once the command firebase apphosting:backends:create --project [project-id-on-blaze-plan] was ran it pretty much gives you all the options that you need to setup, and even makes a conection with github actions to perform a deploy avery time a commit is merged into the main branch, it compiles everything and if it does without any errors App Hosting re-deploys the app, it's pretty handy tbh cause in the 'rollouts' tab of App Hosting it shows you the deployments that have been performed, the build id from cloud build and the commit from which said deployment was performed \n\n[img-comman firebase apphosting create]"
+  },
+  {
+    "id": "Errors, errors everywhere!",
+    "title": "You'll never be safe from annoying bugs",
     "icon": "LayoutTemplate",
     "content": "When a user clicks on a feature in the checklist, the main content area updates to show detailed information about its implementation. This is managed using React's state.\n\nThe `FeatureDisplay` component receives the currently selected feature as a prop and renders its title and content. The layout uses a split-screen approach, which is common for documentation and handbook-style applications, providing a clear and intuitive user experience.\n\n[img:ui-flow]"
   }
