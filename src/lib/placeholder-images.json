@@ -3,19 +3,19 @@
     {
       "id": "code-editor",
       "description": "A code editor showing component-based architecture.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FUntitled%202%20-%20L1%20app.png?alt=mediaa",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FUntitled%202%20-%20L1%20app.png?alt=media",
       "imageHint": "code editor"
     },
     {
       "id": "json-structure",
       "description": "An illustration of a JSON data structure.",
-      "imageUrl": "https://images.unsplash.com/photo-1633412802994-5c058f151b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwc3RydWN0dXJlfGVufDB8fHx8MTc1OTczODU1M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2Fjson-structure.jpg?alt=media",
       "imageHint": "data structure"
     },
     {
       "id": "ui-flow",
       "description": "A diagram showing UI flow and dynamic rendering.",
-      "imageUrl": "https://images.unsplash.com/photo-1647032713701-a80d2b69e502?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1aSUyMGRpYWdyYW18ZW58MHx8fHwxNzU5NzM4NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2Fui-flow.jpg?alt=media",
       "imageHint": "ui diagram"
     }
   ]
