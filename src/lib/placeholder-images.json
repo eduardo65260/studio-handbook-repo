@@ -7,16 +7,46 @@
       "imageHint": "code editor"
     },
     {
-      "id": "json-structure",
+      "id": "mcp-server-tools",
       "description": "An illustration of a JSON data structure.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2Fjson-structure.jpg?alt=media",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FUntitled%20-%20L1%20app.png?alt=media",
       "imageHint": "data structure"
     },
     {
-      "id": "ui-flow",
-      "description": "A diagram showing UI flow and dynamic rendering.",
-      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2Fui-flow.jpg?alt=media",
-      "imageHint": "ui diagram"
+      "id": "mcp-tool-exe",
+      "description": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FUntitled%203%20-%20L1%20app.png?alt=media",
+      "imageHint": ""
+    },
+    {
+      "id": "app-hosting-command",
+      "description": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FScreenshot%202025-10-14%20at%201.28.45%E2%80%AFa.m..png?alt=media",
+      "imageHint": ""
+    },
+    {
+      "id": "app-hosting-rollout",
+      "description": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FScreenshot%202025-10-14%20at%201.35.59%E2%80%AFa.m..png?alt=media",
+      "imageHint": ""
+    },
+    {
+      "id": "lighthouse",
+      "description": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FUntitled%20-%20app%20L1.png?alt=media",
+      "imageHint": ""
+    },
+    {
+      "id": "lighthouse-score",
+      "description": "",
+      "imageUrl": "",
+      "imageHint": ""
+    },
+    {
+      "id": "img404",
+      "description": "",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/minecraft-videos-5f88e.firebasestorage.app/o/images%2FScreenshot%202025-10-14%20at%202.31.00%E2%80%AFa.m..png?alt=media",
+      "imageHint": ""
     }
   ]
 }
